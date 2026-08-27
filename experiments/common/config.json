@@ -1,0 +1,18 @@
+{
+  "seed": 2026,
+  "n_folds": 5,
+  "split_type": "complex_level",
+  "total_entries": 5820,
+  "n_single": 4184,
+  "n_multi": 1636,
+  "n_complexes": 343,
+  "training": "full 6706 entries (single + multi)",
+  "evaluation_dimensions": [
+    "overall_all",
+    "overall_single",
+    "overall_multi",
+    "per_structure_all",
+    "per_structure_single",
+    "per_structure_multi"
+  ]
+}

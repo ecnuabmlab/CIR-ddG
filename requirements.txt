@@ -1,0 +1,15 @@
+# Core dependencies (CIR-DDG training, evaluation and geometry features)
+torch>=2.0
+numpy>=1.24
+pandas>=2.0
+scipy>=1.10
+scikit-learn>=1.3
+matplotlib>=3.7
+tqdm>=4.65
+biopython>=1.81
+
+# Optional, only for reproducing specific backbone predictions:
+# - DiffAffinity (experiments/00_base_retrain/diffaffinity, 07_external_validation/run_diffaffinity.py):
+#   jax>=0.4, dm-haiku>=0.0.10, optax>=0.1.7
+# - ESM-IF (experiments/00_base_retrain/proteinmpnn):
+#   fair-esm>=2.0
