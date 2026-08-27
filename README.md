@@ -2,6 +2,8 @@
 
 **Backbone-agnostic residual correction of antibody–antigen affinity changes (ΔΔG) with explicit cross-chain geometry.**
 
+![CIR-DDG framework](assets/framework.png)
+
 CIR-DDG treats ΔΔG prediction as *output-level repair*: a frozen base predictor is combined with a masked additive residual driven by 22 explicit physical descriptors of the mutation-centered interface (9 cross-chain distance features, 9 contact-count features, 4 partner-chemistry features). The correction is gated by a scope mask so that it activates only on single-point mutations at antibody–antigen interfaces (cross-chain distance ≤ 5 Å); predictions outside this cohort are conserved by construction.
 
 The module reads only a scalar base prediction and a fixed descriptor vector, so it can be attached to predictors whose internals are unavailable, retrains in minutes, and can be audited feature by feature.
